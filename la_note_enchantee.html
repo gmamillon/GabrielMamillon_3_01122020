@@ -5,61 +5,155 @@
         <link href="assets/css/style.css" rel="stylesheet"/>
         <link href="assets/font/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Reservia</title>
+        <title>OhMyFood</title>
     </head>
     <body>
-        <header>
+        <header class="header header--resto">
             <a href="index.html" title="acceuil">
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-left header--resto__retour"></i>
                 <img srcset="assets/images/ohmyfood@2x.svg" alt="logo reservia" width="392" height="68" src="assets/images/ohmyfood.png"/>
             </a>
         </header>
-        <img src="assets\images\la_note_enchantee.jpg" alt="photo du restaurant"/>
+        <div class="top">
+            <img class="top__photo" src="assets\images\la_note_enchantee.jpg" alt="photo du restaurant"/>
+        </div>
         <section class="menuMaker">
-            <h1 class="menuMaker__titre">À la française</h1>
-            <i class="far fa-heart"></i>
+            <div class="menuMaker__topDiv">
+                <h1 class="menuMaker__topDiv__titre">La note enchantée</h1>
+                <i class="far fa-heart menuMaker__topDiv__fav"></i>
+            </div>
             <h2 class="menuMaker__partie">Entrées</h2>
             <ul class="menuMaker__liste">
                 <li class="assiette">
-                    <a href="#" title="">Ravioles de foie gras<i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title="">Caviar osciètre<i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
             </ul>
             <h2 class="menuMaker__partie">Plats</h2>
             <ul class="menuMaker__liste">
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
             </ul>
-            <h2 class="menuMaker__partie">desserts</h2>
+            <h2 class="menuMaker__partie">Desserts</h2>
             <ul class="menuMaker__liste">
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
                 <li class="assiette">
-                    <a href="#" title=""><i class="fas fa-check-circle"></i></a>
+                    <a class="assiette__lien" href="#" title="">
+                        <p class="assiette__description">
+                            <span class="assiette__nom">Ravioles de foie gras</span>
+                            <br>Accompagnés de leur crème à la truffe
+                        </p>
+                        <span class="assiette__prix">25€</span>
+                        <div class="assiette__select">
+                            <i class="fas fa-check-circle assiette__select__icon"></i>
+                        </div>
+                    </a>
                 </li>
             </ul>
-            <button class="menuMaker__valider" type="button">
-                Commander
-            </button>
+            <div class="menuMaker__bottomDiv">
+                <a class="menuMaker__bottomDiv__valider" href="#">Commander</a>
+            </div>
         </section>
         <footer class="footer">
             <svg class="footer__svg" width="196" height="34" viewBox="0 0 196 34" fill="none" xmlns="http://www.w3.org/2000/svg">

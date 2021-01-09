@@ -44,7 +44,7 @@ $tertiaire: #99E2D0;
 body {
     font-family: 'roboto';
 }
-header {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,16 @@ header {
     img {
         height: 35px;
         width: auto;
+    }
+    &--resto {
+        margin-top: 0;
+        &__retour {
+            font-size: 22px;
+            line-height: 30px;
+            position: absolute;
+            left: 4%;
+            top: 18px;
+        }
     }
 }
 .localisation {
@@ -95,9 +105,9 @@ header {
     }
     &__ancre {
         @include bouton;
-    }
-    &__ancre:hover {
-        @include bouton--hover;
+        &:hover, &:focus {
+            @include bouton--hover;
+        }
     }
 }
 .fonctionnement {
@@ -199,7 +209,7 @@ header {
             z-index: 1;
             right: 19px;
             bottom: 29px;
-            &:hover {
+            &:hover, &:focus {
                 background: linear-gradient($primaire, $secondaire);
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
@@ -214,9 +224,10 @@ header {
     &__svg {
         height: 21px;
         margin-bottom: 15px;
+        margin-left: -10px;
     }
     &__li {
-        margin-left: 35px;
+        margin-left: 25px;
     }
     &__lien {
         color: white;
@@ -227,8 +238,125 @@ header {
             font-size: 18px;
             width: 35px;
         }
-        &:hover {
+        &:hover, &:focus {
             text-decoration: underline;
+        }
+    }
+}
+.top {
+    height: 240px;
+    width: 100%;
+    margin-bottom: -30px;
+    padding-top: 60px;
+    overflow: hidden;
+    &__photo {
+        height: 240px;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        object-fit: cover;
+    }
+}
+.menuMaker {
+    background-color: #F6F6F6;
+    padding-top: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &__topDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__titre {
+            font-family: 'shrikhand';
+            font-size: 27px;
+            padding-left: 4%;
+        }
+        &__fav {
+            color: #666;
+            font-size: 27px;
+            padding-right: 5%;
+        }
+    }
+    &__partie {
+        padding-left: 4%;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    &__liste {
+        padding: 0 4%;
+    }
+    &__bottomDiv {
+        height: 150px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__valider {
+            @include bouton;
+            padding: 20px 50px;
+            &:hover, &:focus {
+                @include bouton--hover;
+            }
+        }
+    }
+}
+.assiette {
+    background-color: white;
+    border-radius: 16px;
+    height: 70px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    animation: 1s linear loading;
+    @include shadow;
+    &__lien {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__description {
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0 0 10px 10px;
+        width: calc(100% - 50px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__nom {
+        font-size: 18px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+         
+    }
+    &__prix {
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 15px 10px 0;
+    }
+    &__select {
+        width: 0px;
+        height: 100%;
+        background-color: $tertiaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: all 0.4s linear;
+        &__icon {
+            font-size: 24px;
+            color: white;
+            transition: all 0.4s linear;
+        }
+    }
+    &:hover &__select, &:focus &__select {
+        width: 80px;
+        &__icon {
+            transform: rotate(1turn);
         }
     }
 }
