@@ -325,6 +325,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .menuMaker__topDiv__titre {
   font-family: "shrikhand";
@@ -332,25 +333,41 @@ body {
   padding: 0 14% 0 4%;
 }
 .menuMaker__topDiv__fav {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-align: center;
   font-size: 30px;
   color: #666;
   position: absolute;
   z-index: 1;
+  top: 8px;
   right: 5%;
+  bottom: 30px;
 }
 .menuMaker__topDiv__fav--faved {
-  font-size: 30px;
+  width: 40px;
+  height: 11px;
+  padding-top: 30px;
+  display: flex;
+  text-align: center;
+  font-size: 0px;
   color: transparent;
-  background: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  top: 8px;
   right: 5%;
-}
-.menuMaker__topDiv__fav--faved:hover, .menuMaker__topDiv__fav--faved:focus {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+  bottom: 30px;
+  transition: all 0.6s ease-out;
+}
+.menuMaker__topDiv__fav--faved:hover, .menuMaker__topDiv__fav--faved:focus {
+  font-size: 30px;
+  height: 40px;
+  padding-top: 0px;
 }
 .menuMaker__partie {
   width: 45px;
@@ -387,7 +404,6 @@ body {
 
 /*** Assiette ***/
 .assiette {
-  width: max;
   background-color: white;
   border-radius: 16px;
   height: 70px;
